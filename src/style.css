@@ -1,0 +1,49 @@
+html{
+    text-align: center;
+    
+    
+    background-size: cover;
+}
+
+h1,h3, span{
+    text-align: center;
+}
+body{
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    background-color: powderblue;
+    
+
+    
+
+}
+#box{
+    background-color: ghostwhite;
+    align-content: center;
+    padding: 100px 100px 100px 100px;
+    border-color: indianred;
+    border-radius: 50px;
+
+}
+footer{
+    text-align: center;
+    color: ghostwhite;
+    padding: 5%;
+}
+#contenedor{
+    
+    background-color: ghostwhite;
+    padding: 0 50px 10px 50px;
+    border-radius: 50px;
+    border-color: rgb(223, 20, 20);
+    
+}
+#descripcion{
+    padding: 1%;
+}
+#image{
+    align-content: center;
+    width: 200px;
+    height: 200px;
+}
+  

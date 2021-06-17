@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <h1>QULLQIPAY</h1>
+
+    <section id="inicio">
+      <div id="contenedor">
+      <div id="descripcion">
+      <h3>RECIBO DE VENTA</h3><br>
+      <center>
+       <span>Ingrese datos de la compra</span><br><br>
+      <span>NOMBRE:</span><input id="name" type="text"> 
+      <span>CONCEPTO:</span><input id="destino" type="text"><br><br>
+      <span>PRECIO:</span><input id="precio" type="text">
+    </center>
+    </div>
+      
+      <center>
+        <img src="img/Card Payment_Flatline.png" id="image" alt="cardpago"><br><br>
+        <button id="btnform">IR A FORMULARIO DE PAGO AQUI</button>
+      </center>
+    </div>
+    </section><br><br>
+
+    <section id="form" style="display: none;">
+      <form id="box">
+        <center>
+          <input id="numbercard" type="text" maxlength="16" autocomplete="off" placeholder="Número de Tarjeta">
+        </center><br><br>
+        <center>
+          <input id="cvv" type="text" placeholder="CVV">
+          <input id="fv" type="text" placeholder="FN">
+        </center><br><br>
+        <center>
+          <button type="button" id="btnvalidate">VALIDAR</button>
+        </center>
+      </form>
+    </section>
+
+    <section id="final" style="display: none;">
+      <center>
+        <span id="cate"></span><br><br>
+        <span id="tarjeta"></span><br><br>
+        <label id="validacion"></label><br><br>
+        <span id="mensaje"></span><br><br>
+        <button id="btnpago">REALIZAR PAGO</button><br><br>
+        <button id="btnregreso">INICIO</button>
+      </center>
+
+    </section>
+
+
+  </main>
+
+  <footer>&#169;&#65039;&#174;&#65039;</footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
