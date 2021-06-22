@@ -1,49 +1,179 @@
-html{
-    text-align: center;
-    
-    
-    background-size: cover;
-}
 
-h1,h3, span{
+h1, span{
     text-align: center;
 }
 body{
-    background-image: url("img/fondo.jpg");
-    background-size: cover;
-    background-color: powderblue;
-    
-
-    
-
+    background-image: url("img/fondoroca.png");
+    position: relative; 
+    left: 20px;
+    top: 0;
+    overflow: scroll; 
 }
-#box{
-    background-color: ghostwhite;
-    align-content: center;
-    padding: 100px 100px 100px 100px;
-    border-color: indianred;
-    border-radius: 50px;
 
+#entrada{
+    position: absolute;
+    width: 800px;
+    height: 434px;
+    left: 480px;
+    top: 0px;
+    padding: 0px;
 }
-footer{
+
+#contenedor, #box, #end {
+    background-color: rgba(255, 245, 238, 0.726);
+    position: absolute;
+    width: 800px;
+    height: 434px;
+    left: 354px;
+    top: 190px;
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
     text-align: center;
-    color: ghostwhite;
-    padding: 5%;
+
+    color: #000000;
+    border-bottom: 5px double rgb(87, 43, 107);
+    border-top: 5px double rgb(87, 43, 107) ;    
 }
-#contenedor{
-    
-    background-color: ghostwhite;
-    padding: 0 50px 10px 50px;
-    border-radius: 50px;
-    border-color: rgb(223, 20, 20);
-    
-}
-#descripcion{
-    padding: 1%;
-}
+
 #image{
     align-content: center;
     width: 200px;
     height: 200px;
+    padding: 0;
 }
-  
+#logo{
+    align-content: center;
+    width: 500px;
+    height: 200px;
+    
+}
+#btnvalidate, #btnform, #btnpago, #btnagregar, #btnguardar, #btnregreso{
+    background: #974aaa;
+    border-radius: 16px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+    }
+#btnvalidate{
+    position: absolute;
+    width: 335px;
+    height: 40px;
+    left: 230px;
+    top: 360px;
+}
+#btnform{
+    position: absolute;
+    width: 335px;
+    height: 40px;
+    left: 230px;
+    top: 340px;
+}
+#btnpago{
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    left: 430px;
+    top: 360px;
+}
+#btnguardar{
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    left: 430px;
+    top: 310px;
+}
+#btnagregar{
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    left: 130px;
+    top: 310px;
+}
+#btnregreso{
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    left: 130px;
+    top: 360px;
+}
+#cardform{
+    position: absolute;
+    
+    left: 200px;
+    top: 50px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+#numbercard, #fv, #cvv {
+    background: #d3c6d6;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #7a7777;
+}
+#numbercard {
+    width: 300px;
+    height: 26px;
+    left: 250px;
+    top: 10px;
+}
+#fv, #cvv {
+    width: 80px;
+    height: 26px;
+    left: 200px;
+    top: 5px;
+}
+.letra{
+    font-size: 18px;
+}
+#btnvalidate{
+    top: 300px;
+}
+.imagen{
+    align-content: center;
+    width: 80px;
+    height: 60px;
+    top: 0px;
+    padding: 0;
+}
+#mensaje{
+    background: #d3c6d6;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+footer{      
+    margin-top: 610px;
+    background: #412a4696;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: rgb(250, 245, 245);
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center; 
+   
+}
