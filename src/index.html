@@ -3,65 +3,82 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tarjeta de crédito válida</title>
+  <title>QULLQIPAY - Pagos rapido, facil y sencillo</title>
   <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon" href="img/favicon.png" type="img/png" />
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <div id="entrada">
+      <img src="img/logofinal.png" id="logo" alt="logo1">
+      <div id="portada"></div>
+    </div>
+  </header>
   <main>
-    <h1>QULLQIPAY</h1>
-
+    <!-----------------------Inicio de mi pagina---------------------------->
+    <!-----------------Descripcion y bienvenida de la pagina--------------->
     <section id="inicio">
       <div id="contenedor">
-      <div id="descripcion">
-      <h3>RECIBO DE VENTA</h3><br>
-      <center>
-       <span>Ingrese datos de la compra</span><br><br>
-      <span>NOMBRE:</span><input id="name" type="text"> 
-      <span>CONCEPTO:</span><input id="destino" type="text"><br><br>
-      <span>PRECIO:</span><input id="precio" type="text">
-    </center>
-    </div>
-      
-      <center>
-        <img src="img/Card Payment_Flatline.png" id="image" alt="cardpago"><br><br>
-        <button id="btnform">IR A FORMULARIO DE PAGO AQUI</button>
-      </center>
-    </div>
+        <br><br>
+        <span>Con tu nueva App-amiga “QULLQI”</span> <br>
+        <span>Realiza tus pagos y compras de manera rapida, facil y sencilla.</span><br><br>
+        <span>*Se acepta todo tipo de tarjetas.</span><br>
+        <img src="img/Card Payment_Flatline.png" id="image" alt="cardpago"><br>
+        <button id="btnform">IR A QULLQIPAGO</button>
+      </div>
     </section><br><br>
-
+    <!------------------------Seccion Formulario --------------------------->
+    <!-------Formulario para ingreso de los datos de la tarjeta-------------->
     <section id="form" style="display: none;">
       <form id="box">
-        <center>
-          <input id="numbercard" type="text" maxlength="16" autocomplete="off" placeholder="Número de Tarjeta">
-        </center><br><br>
-        <center>
-          <input id="cvv" type="text" placeholder="CVV">
-          <input id="fv" type="text" placeholder="FN">
-        </center><br><br>
-        <center>
-          <button type="button" id="btnvalidate">VALIDAR</button>
-        </center>
+        <div id="cardform">
+          <label>Primero validaremos tu numero de tarjeta.</label><br><br><br>
+          <label class="letra">INGRESA TU NÚMERO DE TARJETA</label><br>
+          <input id="numbercard" type="text" maxlength="16" autocomplete="off" placeholder="#### #### #### ####">
+          <br><br>
+          <label class="letra">FN</label>
+          <input id="fv" type="text" placeholder="03/26">
+          <label class="letra">CVV</label>
+          <input id="cvv" type="text" placeholder="123">
+        </div><br><br>
+        <button type="button" id="btnvalidate">VALIDAR</button>
       </form>
     </section>
-
+    <!------------------------Seccion Final--------------------------------->
+    <!---Mostrar los datos de la tarjeta, franquicia, si es valida o no------>
     <section id="final" style="display: none;">
-      <center>
-        <span id="cate"></span><br><br>
+      <div id="end">
+
+        <br>
+        <img src="img/JBC.png" class="imagen">
+        <img src="img/american_express.png" class="imagen">
+        <img src="img/diner_inter.png" class="imagen">
+        <img src="img/visa.png" class="imagen">
+        <img src="img/mastercard.png" class="imagen"> <br><br>
+        <label id="franqui"></label><br><br>
         <span id="tarjeta"></span><br><br>
         <label id="validacion"></label><br><br>
         <span id="mensaje"></span><br><br>
-        <button id="btnpago">REALIZAR PAGO</button><br><br>
+        <button id="btnguardar">GUARDAR</button><br><br>
+        <button id="btnpago">QULLQIPAGO</button><br><br>
+        <button id="btnagregar">AGREGAR</button><br><br>
         <button id="btnregreso">INICIO</button>
-      </center>
+
+      </div>
 
     </section>
 
 
   </main>
+  <div id="piepag">
+    <footer>
+      <div class="copyright">&#169;&#65039;All Rights Reserved 2021-2022</div>
+      <div class="copyright">Designed by Maribel Aguirre</div>
+    </footer>
+  </div>
 
-  <footer>&#169;&#65039;&#174;&#65039;</footer>
   <script src="index.js" type="module"></script>
 </body>
 
