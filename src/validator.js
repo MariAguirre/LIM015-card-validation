@@ -5,7 +5,7 @@ const validator = {
   isValid(creditCardNumber) {
     const array = creditCardNumber.split("");//[0,1,2,3,4,5,6,7,8,9]
     const arrayInverse = array.reverse();
-    const sum = 0;
+    let sum = 0;
     for (let i = 0; i < arrayInverse.length; i++) {
       let numero = arrayInverse[i];// [9,8,7,6,5,4,3,2,1,0]
       if ((i % 2) != 0) {//[2 ,3, 6]
